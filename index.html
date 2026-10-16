@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuel Field Support</title>
+<meta name="description" content="Support for Fuel Field, a carb and fluid tracking data field for the Garmin Edge 840.">
+<style>
+  :root { --bg:#0b1011; --panel:#121a1b; --line:#ffffff1a; --text:#f4f6f0; --muted:#a9b7ad; --lime:#c8fa64; --red:#ff6b61; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  a { color:var(--lime); }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 20px; }
+  header { border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; padding-top:22px; padding-bottom:22px; letter-spacing:3px; font-size:14px; color:var(--muted); }
+  header b { color:var(--text); }
+  nav a { color:var(--muted); text-decoration:none; margin-left:18px; letter-spacing:1px; }
+  nav a:hover { color:var(--lime); }
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:30px; align-items:center; padding:56px 0 30px; }
+  .kicker { color:var(--lime); letter-spacing:4px; font-size:13px; font-weight:600; }
+  h1 { font-size:64px; line-height:1.02; letter-spacing:-2.5px; margin:14px 0 18px; }
+  h2 { font-size:34px; letter-spacing:-1px; margin:64px 0 10px; }
+  h3 { font-size:21px; margin:28px 0 6px; }
+  .lead { font-size:21px; color:#d3ddd4; }
+  .pill { display:inline-block; border:1px solid #c8fa6466; background:#c8fa6414; color:var(--lime); border-radius:30px; padding:8px 18px; font-size:15px; margin-top:8px; }
+  .hero img { width:100%; max-width:420px; display:block; margin:0 auto; }
+  video { width:100%; border-radius:14px; border:1px solid var(--line); background:#000; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:22px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .card img { width:100%; display:block; }
+  .card h3 { margin-top:6px; }
+  .card p { color:var(--muted); margin:4px 0 0; font-size:16px; }
+  ol, ul { padding-left:22px; } li { margin:6px 0; }
+  .muted { color:var(--muted); }
+  code { background:#ffffff12; border-radius:5px; padding:1px 6px; font-size:15px; }
+  table { width:100%; border-collapse:collapse; margin-top:12px; font-size:15px; }
+  th, td { text-align:left; border-bottom:1px solid var(--line); padding:8px 6px; }
+  th { color:var(--muted); font-weight:600; }
+  details { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 18px; margin:10px 0; }
+  summary { cursor:pointer; font-weight:600; }
+  .contact { background:var(--panel); border:1px solid #c8fa6444; border-radius:16px; padding:26px; margin:64px 0 40px; }
+  footer { border-top:1px solid var(--line); color:var(--muted); font-size:14px; padding:24px 0 40px; }
+  @media (max-width:800px) { .hero { grid-template-columns:1fr; padding-top:30px; } h1 { font-size:46px; } .grid { grid-template-columns:1fr; } nav { display:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap"><div><b>⚡ FUEL FIELD</b> · SUPPORT</div>
+  <nav><a href="#setup">Setup</a><a href="#features">Features</a><a href="#workout">Workout goal</a><a href="#fit">FIT data</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav></div></header>
+
+<main class="wrap">
+<section class="hero">
+  <div>
+    <div class="kicker">CONNECT IQ DATA FIELD · GARMIN EDGE 840</div>
+    <h1>Fuel smarter.<br>Ride farther.</h1>
+    <p class="lead">Fuel Field lets you log carbs and fluid with one tap while you ride. It shows how far ahead of or behind your hourly carb goal you are, warns you when you fall behind, and saves everything to your ride's FIT file.</p>
+    <span class="pill">Free · Version 4.1</span>
+  </div>
+  <img src="img/main.png" alt="Fuel Field on a Garmin Edge 840: 80 g carbs, 77 g ahead of a 60 g/h goal, 175 mL fluid">
+</section>
+
+<video controls preload="metadata" poster="img/poster.png" src="demo.mp4"></video>
+
+<h2 id="setup">Setup</h2>
+<ol>
+  <li><b>Install</b> Fuel Field from the Connect IQ Store (on your phone, or Garmin Express on a computer), then sync your Edge.</li>
+  <li><b>Add it to a data screen:</b> on the Edge, open your activity profile → Data Screens, add a screen with a <b>one-field layout</b>, and pick Connect IQ → Fuel Field. It's designed for a full screen.</li>
+  <li><b>Turn on the EAT alert:</b> in the same activity profile, go to Alerts → Connect IQ and enable Fuel Field.</li>
+  <li><b>Set your snacks and drinks</b> in the Garmin Connect app: your Edge → Connect IQ apps → Fuel Field → Settings. Changes reach the Edge on the next sync.</li>
+</ol>
+
+<h3>Settings</h3>
+<table>
+  <tr><th>Setting</th><th>What it does</th><th>Default</th></tr>
+  <tr><td>Snacks 1–6</td><td>Name, carbs (g), sodium (mg) and caffeine (mg) per tap. Leave a name blank to turn that slot off. Names are letters and numbers, up to 10 characters.</td><td>Gel, Chews, Bar, Banana, Caf Gel</td></tr>
+  <tr><td>Drinks 1–2</td><td>Name, fluid (mL) and sodium (mg) per tap. Drinks don't count carbs; log drink-mix carbs with a snack slot.</td><td>Water 175 mL, Hydration 175 mL</td></tr>
+  <tr><td>Goal presets 1–4</td><td>Label and g/h for the four goals in goal edit mode.</td><td>Easy 30, Endurance 45, Long 60, Hard 75</td></tr>
+  <tr><td>Alert every X g behind</td><td>The EAT alert fires each time you fall this much further behind.</td><td>25 g</td></tr>
+  <tr><td>Edit timeout</td><td>Seconds before an edit mode closes by itself.</td><td>20 s</td></tr>
+  <tr><td>Tap beep</td><td>A short beep when a tap logs an item or undo removes one.</td><td>On</td></tr>
+</table>
+<p class="muted">Snack and drink amounts are locked for the current ride, so your totals stay consistent. Changes made mid-ride apply from your next ride. Alert and goal settings apply right away.</p>
+
+<h2 id="features">How it works</h2>
+<p>The top bar shows <b>CARBS g</b> · <b>GOAL</b> with how far ahead (+) or behind (−) you are · <b>FLUID mL</b>. It's green while you're on track and turns red once you're one alert step behind. The goal counts elapsed time, so it keeps running through stops. Below the top bar are four big buttons: three snacks and a drink.</p>
+<div class="grid">
+  <div class="card"><img src="img/confirm.png" alt="Tap confirmation showing Chews +40g and an undo button"><h3>One tap to log</h3><p>Tap a button to log one item. It flashes blue, and the top bar shows what you logged and your new total for 5 seconds. Tap the red undo icon to take it back.</p></div>
+  <div class="card"><img src="img/goal.png" alt="Goal edit mode with four goal presets"><h3>Pick your goal</h3><p>Tap the middle of the top bar to choose one of your four goal presets in g/h.</p></div>
+  <div class="card"><img src="img/history.png" alt="Snack edit mode with a history undo button"><h3>Change buttons, undo older items</h3><p>Tap the left of the top bar to choose which snacks are on the buttons (tap the right for drinks). In these edit modes, one button becomes an undo for your most recent snack or drink.</p></div>
+  <div class="card"><img src="img/behind.png" alt="Top bar turned red, 32 g behind"><h3>Know where you stand</h3><p>The top bar turns red when you're one alert step behind your goal.</p></div>
+  <div class="card"><img src="img/alert.png" alt="EAT alert: 25 g behind"><h3>EAT alert</h3><p>A full-screen EAT alert and a tone each time you fall another alert step behind. It waits until you've closed any edit mode or confirmation.</p></div>
+  <div class="card"><img src="img/main.png" alt="Main screen on track"><h3>Logged to your ride</h3><p>Totals, counts, sodium and caffeine are saved in the FIT file and show up in Garmin Connect.</p></div>
+</div>
+<p class="muted">After you press Stop, taps are blocked so your ride summary always matches your records ("TIMER STOPPED / resume to log"). Logging still works while you're paused.</p>
+
+<h2 id="workout">Workout carb goal</h2>
+<p>Put a carb tag in the <b>first step</b> of a structured workout (for example, from Intervals.icu). When you start the workout and press Start, Fuel Field uses that tag as your goal for the ride. You'll see <b>WORKOUT GOAL 60 g/h</b>, and the goal cell reads <b>WKT 60</b>.</p>
+<ul>
+  <li>Tags it understands, in any case: <code>CHO60</code>, <code>CHO 60</code>, <code>CHO60g</code>, <code>carbs 60</code>, <code>carbs: 60</code>, <code>60 g/h</code>. Values from 0 to 150.</li>
+  <li>Example first step in Intervals.icu: <code>- CHO60 Warmup 10m 55%</code></li>
+  <li>The tag must stand alone, so <code>ECHO60</code> and <code>CHO60x</code> are ignored.</li>
+  <li>Start the workout on the Edge before you press Start. If no tag is found, you'll see "NO CHO TAG IN WORKOUT" with the step's text, so you can spot a typo.</li>
+  <li>Picking a goal yourself replaces the workout goal for that ride.</li>
+</ul>
+
+<h2 id="fit">FIT file data</h2>
+<p>Fuel Field writes these fields (they use all 16 Connect IQ developer fields, so it can't share a ride with another field that uses them):</p>
+<table>
+  <tr><th>Field</th><th>Where</th><th>Meaning</th></tr>
+  <tr><td><code>carbs_total</code>, <code>water_total</code></td><td>Every record (chart)</td><td>Running totals in g and mL</td></tr>
+  <tr><td><code>carb_debt</code></td><td>Every record (chart)</td><td>Grams behind goal (negative = ahead)</td></tr>
+  <tr><td><code>carbs_session</code>, <code>water_session</code>, <code>sodium_session</code>, <code>caffeine_session</code></td><td>Ride summary</td><td>Ride totals</td></tr>
+  <tr><td><code>carb_goal</code></td><td>Ride summary</td><td>Goal used, in g/h</td></tr>
+  <tr><td><code>count_snack1</code>–<code>6</code>, <code>count_drink1</code>–<code>2</code></td><td>Ride summary</td><td>Taps per slot</td></tr>
+</table>
+
+<h2 id="faq">FAQ</h2>
+<details><summary>My settings don't show up on the Edge.</summary><p>Install from the Connect IQ Store and sync after changing settings. Snack and drink changes made mid-ride apply from the next ride. A copy loaded by cable (sideloaded) always uses the defaults.</p></details>
+<details><summary>I don't get the EAT pop-up.</summary><p>Enable Fuel Field under your activity profile → Alerts → Connect IQ. Also check your "Alert every X g behind" setting. The Edge 840 has no vibration motor, so the alert is a pop-up plus a tone.</p></details>
+<details><summary>A tap didn't log after I stopped.</summary><p>That's on purpose. After Stop, nothing more is written to the ride, so taps are blocked. Resume the timer to log again.</p></details>
+<details><summary>The workout goal didn't appear.</summary><p>The tag has to be in the first step's name or notes, and the workout must be started on the Edge before you press Start. Fuel Field reads only the first step, so you get one goal per ride.</p></details>
+<details><summary>Which devices are supported?</summary><p>The Garmin Edge 840 and Edge 840 Solar.</p></details>
+
+<section class="contact" id="contact">
+  <h2 style="margin-top:0">Contact</h2>
+  <p>Questions, bugs or ideas? Email <a href="mailto:fondest.doting4h@icloud.com">fondest.doting4h@icloud.com</a>. For a bug, please include your Edge model, what you tapped, and the date of the ride.</p>
+</section>
+</main>
+<footer><div class="wrap">Fuel Field is an independent Connect IQ app and is not affiliated with Garmin. Garmin and Edge are trademarks of Garmin Ltd. Screens are from the Connect IQ simulator.</div></footer>
+</body>
+</html>
